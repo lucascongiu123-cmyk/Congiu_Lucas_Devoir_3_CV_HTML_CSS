@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+@font-face {
+    font-family: "Raleway";
+    src:url("../Documents/font/Raleway-VariableFont_wght.ttf") format("truetype");
+    /* j'avais mis une deuxieme url pour le .woff mais celui-ci ne s'affichait pas correctement, donc j'ai laissé que le .ttf */
+    font-weight: 100 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Raleway";
+    src: url("../Documents/font/Raleway-Italic-VariableFont_wght.ttf") format("truetype");
+    /* comme precedent, j'avais mis une deuxieme url pour le .woff mais celui-ci ne s'affichait pas correctement, donc j'ai laissé que le .ttf */
+    font-weight: 100 900;
+    font-style: italic;
+}
+
+body {
+    font-family: "Raleway", sans-serif;
+    font-weight: 600;
+}
+
+h1, h2 {
+    font-family: 'Lato', sans-serif;
+}
