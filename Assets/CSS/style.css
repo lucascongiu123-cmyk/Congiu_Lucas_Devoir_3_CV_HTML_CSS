@@ -37,10 +37,22 @@ h1, h2 {
     font-family: 'Lato', sans-serif;
 }
 
-header, footer {
-    background-color: #17abb3;
+li {
+    list-style: square;
 }
 
+li::marker {
+    color: #17abb3;
+}
+
+.étoiles, h2, time {
+    color:#17abb3
+}
+
+header, footer {
+    background-color: #17abb3;
+    color: #ffffff;
+}
 
 .skills {
     width: 33.33%;
@@ -52,7 +64,6 @@ header, footer {
     background-color: #ffffff;  
 }
 
-
 header img {
     width: auto;
     height: 150px;
@@ -62,7 +73,4 @@ header img {
 
 main {
     display: flex;
-    
-    
-
 }
