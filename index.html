@@ -8,18 +8,33 @@
 	    <title>Mon CV en ligne</title>
         <link rel="icon" href="./Assets/Documents/img/cv.png" type="image/png">
         <link rel="stylesheet" href="./Assets/CSS/style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     </head>
     <body>
         <header>
-            <img src="./Assets/Documents/img/Photo de profil.jpg" alt="Photo de profil de Lucas" class="photo-profil">
+            <a href="./Assets/Documents/img/Photo de profil.jpg" target="_blank" rel="noopener noreferrer">
+                <img src="./Assets/Documents/img/Photo de profil.jpg" alt="Photo de profil de Lucas">
+            </a>
             <section>
                 <h1>Lucas Congiu</h1>
                 <p>Développeur web et web mobile</p>
                 <address>
-                    <a href="mailto:luca********@gmail.com">Mail</a>
-                    <a href="map:https://www.google.com/maps/place/Nantes/@47.2383203,-1.6427346,24598m/data=!3m2!1e3!4b1!4m6!3m5!1s0x4805ee81f0a8aead:0x40d37521e0ded30!8m2!3d47.2179648!4d-1.5529219!16zL20vMGhxenI?authuser=0&entry=ttu&g_ep=EgoyMDI2MTAyOC4wIKXMDSoASAFQAw%3D%3D ">Adresse</a>
-                    <a href="tel: 0656****29">Téléphone</a>
-                    <p id="permis-b">Permis B</p>
+                    <div>
+                        <i class="fa-solid fa-envelope"></i>
+                        <a href="mailto:lucascongiu123@gmail.com">Mail</a>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-house"></i>
+                        <a href="https://www.google.com/maps/place/Nantes/@47.2383482,-1.7251398,49091m/data=!3m2!1e3!4b1!4m6!3m5!1s0x4805ee81f0a8aead:0x40d37521e0ded30!8m2!3d47.2179648!4d-1.5529219!16zL20vMGhxenI?authuser=0&entry=ttu&g_ep=EgoyMDI2MTEwNC4wIKXMDSoASAFQAw%3D%3D" target="_blank">Adresse</a>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-phone"></i>
+                        <a href="tel: 0656****29">Téléphone</a>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-car"></i>
+                        <span>Permis B</span>
+                    </div>
                 </address>
             </section>
         </header>
@@ -36,14 +51,6 @@
                         <li>
                             <span class="competence">CSS</span>
                             <span class="étoiles" role="img" aria-label="1 sur 5">★☆☆☆☆</span>
-                        </li>
-                        <li>
-                            <span class="competence">Javascript</span>
-                            <span class="étoiles" role="img" aria-label="0 sur 5">☆☆☆☆☆</span>
-                        </li>
-                        <li>
-                            <span class="competence">PHP</span>
-                            <span class="étoiles" role="img" aria-label="0 sur 5">☆☆☆☆☆</span>
                         </li>
                     </ul>
                 </section>
@@ -79,10 +86,10 @@
                     <h2>Centres d'intérêt</h2>
                     <hr>
                     <ul>
-                        <li>VTT</li>
+                        <li>Sports</li>
                         <li>Politique</li>
                         <li>Jeux vidéo</li>
-                        <li>Organisation</li>
+                        <li>Cuisine</li>
                     </ul>
                 </section>
             </div>
@@ -90,10 +97,12 @@
                 <section class="profil">
                     <h2>Profil</h2>
                     <hr>
-                    <p>Jeune développeur reconverti cherchant son premier poste dans le domaine du développement web.
-                    J'ai 33 ans, un petit garçons de 2 ans et une vraie volonté de réussir dans ce domaine. Je suis motivé, curieux et j'apprends vite et je suis très intéressé par les nouvelles technologies.
-                    </p>
-                    <p>Je suis actuellement en formation de développeur web et web mobile avec le Centre Européen de Formation, une école 100% en ligne. Je suis également en train de préparer le diplôme de développeur web et web mobile et je suis à la recherche d'un stage ou d'un emploi dans ce domaine.</p>
+                    <div>
+                        <p>Jeune développeur reconverti cherchant son premier poste dans le domaine du développement web et web mobile.
+                        J'ai 33 ans et une vraie volonté de réussir dans ce domaine. Je suis motivé, curieux et je suis très intéressé par les nouvelles technologies.
+                        </p>
+                        <p>Je suis actuellement en formation de développeur web et web mobile avec le Centre Européen de Formation, une école 100% en ligne. Je suis également en train de préparer le diplôme de développeur web et web mobile et je suis à la recherche d'un stage suivi d'un emploi dans ce domaine.</p>
+                    </div>
                 </section>
                 <section class="formations">
                     <h2>Formations</h2>
@@ -128,62 +137,58 @@
                         </li>
                     </ul>
                 </section>
-                <section class="stages">
-                    <h2>Stages</h2>
-                    <hr>
-                    <ul>
-                        <li>
-                            <div>
-                                <h3>Gestionnaire de paie</h3>
-                                <span>Société Truc et Machin</span>
-                            </div>
-                            <span>
-                                <time datetime="03/2022-04/2022">Mars 2022 - Avril 2022</time>
-                            </span>
-                        </li>
-                        <li>
-                            <div>
-                                <h3>Agent d'accueil</h3>
-                                <span>Mairie de la ville</span>
-                            </div>
-                            <span>
-                                <time datetime="01/2021-02/2021"> Janvier 2021 - Février 2021</time>
-                            </span>
-                        </li>
-                    </ul>
-                </section>
+                <!-- je n'ai pas mis de section stage car je n'ai pas fait de stage dans ma vie. -->
                 <section class="experiences">
                     <h2>Expériences Professionnelles</h2>
                     <hr>
                     <ul>
                         <li>
                             <div>
-                                <h3>Agent d'accueil</h3>
-                                <span>Mairie de la ville</span>
+                                <h3>Commercial Terrain</h3>
+                                <span>Sector alarme</span>
                             </div>
                             <span>
-                                <time datetime="03/2021-07/2021"> Mars 2021 - Juillet 2021</time>
+                                <time datetime="01/2026-02/2026"> Janvier 2026 - Février 2026</time>
                             </span>
                         </li>
                         <li>
                             <div>
-                                <h3>Chauffeur - Livreur</h3>
-                                <span>Transport Nénés et fils</span>
+                                <h3>Vendeur</h3>
+                                <span>L'Etal des saveurs</span>
                             </div>
                             <span>
-                                <time datetime="09/2021-12/2021"> Septembre 2021 -Décembre 2021</time>
+                                <time datetime="06/2025-11/2025"> Juin 2025 - Novembre 2025</time>
                             </span>
                         </li>
                         <li>
                             <div>
-                                <h3>Préparateur de commandes</h3>
-                                <span>Le slip français</span>
+                                <h3>Technicien Multiservices</h3>
+                                <span>Defense Environement Services</span>
                             </div>
                             <span>
-                                <time datetime="01/2000-09/2000">Janvier 2000 - Septembre 2000</time>
+                                <time datetime="01/2024-06/2025">Janvier 2024 - Juin 2025</time>
+                            </span>
+                        </li>
+                        <li>
+                            <div>
+                                <h3>Chauffeur</h3>
+                                <span>Valoleïque</span>
+                            </div>
+                            <span>
+                                <time datetime="08/2023-12/2023">Août 2023 - Décembre 2023</time>
+                            </span>
+                        </li>
+                        <li>
+                            <div>
+                                <h3>Technicien Vitrage</h3>
+                                <span>Carglass</span>
+                            </div>
+                            <span>
+                                <time datetime="04/2022-06/2023">Avril 2022 - Juin 2023</time>
                             </span>
                         </li>
                     </ul>
+                    <!-- j'ai limité mes éxperiances professionnelles à celles realisées depuis que je suis dans la region car sinon il faudrait 3 ou 4 pages. -->
                 </section>
             </div>
         </main>
@@ -193,13 +198,13 @@
                     <i class="fa-brands fa-linkedin"></i>
                 </a>
                 <a href="https://github.com/lucascongiu123-cmyk" target="_blank" rel="noopener noreferrer">
-                    <img src="./Assets/Documents/img/github.png" alt="GitHub">
+                    <i class="fa-brands fa-github"></i>
                 </a>
                 <a href="#" target="_blank" rel="noopener noreferrer">
-                    <img src="./Assets/Documents/img/instagram.png" alt="Instagram">
+                    <i class="fa-brands fa-square-instagram"></i>
                 </a>
             </div>
-            <p><small>Mis à jour le 06/11/2026</small></p>
+            <p datetime="09/11/2026"><small>Mis à jour le 09/11/2026</small></p>
         </footer>
     </body>
 </html>

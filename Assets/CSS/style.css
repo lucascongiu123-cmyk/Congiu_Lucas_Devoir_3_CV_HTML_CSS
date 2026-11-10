@@ -28,49 +28,189 @@ html {
 
 body {
     font-family: "Raleway", sans-serif;
-    font-weight: 600;
+    font-weight: 550;
     width: 1160px;
     margin: 0 auto;
 }
 
-h1, h2 {
-    font-family: 'Lato', sans-serif;
+a {
+    text-decoration: none;
+    font-style: normal;
+    color: #ffffff;
 }
 
-li {
-    list-style: square;
-}
-
-li::marker {
-    color: #17abb3;
-}
-
-.étoiles, h2, time {
-    color:#17abb3
-}
-
-header, footer {
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 250px;
     background-color: #17abb3;
     color: #ffffff;
 }
 
-.skills {
-    width: 33.33%;
-    background-color: #e3e3e3;
-}
-
-.parcours {
-    width: 66.66%;
-    background-color: #ffffff;  
-}
-
 header img {
     width: auto;
-    height: 150px;
+    height: 160px;
     border-radius: 50%;
     border: 5px solid #ffffff;
+    margin-left: 118px;
+    cursor: zoom-in;
+}
+
+header section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 263px;
+}
+
+header section h1 {
+    font-size: 3.5rem;
+    font-family: 'Lato', sans-serif;
+}
+
+header section p {
+    font-size: 1.5rem;
+    padding: 5px 0 20px 0;
+}
+
+header section address {
+    font-weight: 350;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px 30px;
+}
+
+header section address div a {
+    font-size: 1rem;
+    padding: 0 10px;
+    text-decoration: none;
+}
+
+header section address div span {
+    font-style: normal;
+    font-size: 1rem;
+    padding-left: 10px;
 }
 
 main {
     display: flex;
+}
+
+main div[class="skills"],
+main div[class="parcours"] {
+    padding: 40px;
+}
+
+main div[class="skills"] {
+    width: 33.33%;
+    background-color: #e3e3e3;
+}
+
+h2 {
+    font-family: 'Lato', sans-serif;
+    padding: 10px 0;
+}
+
+hr {
+    border: 1px solid #b9b9b941;
+}
+
+ul {
+    padding: 15px 0;
+}
+
+li {
+    list-style: none;
+}
+
+main section[class="competences"] li,
+main section[class="langues"] li {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 0;
+}
+
+main section[class="qualites"] li,
+main section[class="centres-interets"] li {
+    list-style: square;
+    list-style-position: inside;
+} 
+
+main section[class="qualites"] li::marker,
+main section[class="centres-interets"] li::marker {
+    color: #17abb3;
+    font-size: 1.5rem;
+}
+
+main section li span[class="étoiles"],
+h2,
+time {
+    color:#17abb3
+}
+
+main div[class="parcours"] {
+    width: 66.66%;
+    background-color: #ffffff;  
+}
+
+main div section[class="profil"] div {
+    padding: 20px 0;
+}
+
+main div section[class="profil"] p {
+    text-indent: 30px;
+    text-align: justify;
+}
+
+main div section[class="formations"] li,
+main div section[class="experiences"] li {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+main div section[class="formations"] li:hover,
+main div section[class="experiences"] li:hover {
+    border-left: 4px solid;
+    padding-left: 5px;
+    border-left-color: #1fa5b0;
+    background-color: #e3e5e6;
+}
+
+main div section[class="formations"] li div span,
+main div section[class="experiences"] li div span {
+    font-size: 1rem;
+    font-weight: 400;
+    font-style: italic;
+}
+
+footer {
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #17abb3;
+    color: #ffffff;
+}
+
+footer div {
+    padding-bottom: 10px;
+}
+
+footer div a {
+    font-size: 2rem;
+    padding: 0 12px;
+    text-decoration: none;
+    transition: opacity 0.3s;
+}
+
+footer div a:hover {
+    opacity: 0.6;
+}
+
+footer p {
+    font-style: italic;
 }
